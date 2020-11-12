@@ -1,0 +1,23 @@
+{
+  "type": "postgres",
+  "host": "something.db.server.com",
+  "port": 8082,
+  "username": "me",
+  "password": "abcd1234",
+  "database": "yourdatabase",
+  "synchronize": false,
+  "logging": false,
+  "ssl": {
+    "require": true,
+    "rejectUnauthorized": false
+  },
+  "entities": [
+    "src/db/entities/**/*.ts"
+  ],
+  "migrations": [
+    "src/db/migrations/**/*.ts"
+  ],
+  "subscribers": [
+    "src/db/subscribers/**/*.ts"
+  ]
+}
